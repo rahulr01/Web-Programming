@@ -1,0 +1,58 @@
+h2 {
+  color: darkmagenta;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  color: darkcyan;
+  font-family: fantasy;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: green;
+}
+
+body {
+  background-image: url(solid.avif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  float: right;
+  border-radius: 10px;
+  top: 10px;
+}
+
+
+
+ul{
+  
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+   border-radius: 30px;
+  background-color:rgb(12, 80, 71);
+}
+
+
+li{
+  padding: 10x;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+float: left;
+}
+
+li a {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover
+{
+  border-radius: 30px;
+  background-color: black;
+}

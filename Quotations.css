@@ -1,0 +1,40 @@
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgreen;
+  padding: 10px;
+  margin: 5px;
+  font-size: medium;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: darkolivegreen;
+  margin-left: 50px;
+}
+
+q {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: darkslateblue;
+  padding: 10px;
+  margin: 5px;
+}
+abbr {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: darkcyan;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+bdo {
+  font-family: fantasy;
+  font-size: 20px;
+  color: green;
+  padding: 10px;
+  margin: 5px;
+}

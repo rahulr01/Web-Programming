@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "first"></p>
+    <script>
+        const products = [
+            {
+                name : "Processor",
+                value : 50000
+            },
+
+            {
+                name : "SSD",
+                value : 5000
+             },
+
+            {
+                name: "Motherboard",
+                value: 25000
+            }
+        ];
+
+        function CallBack({value})
+        {
+            return value > 10000 ? "Suggested" : "Not Suggested";
+        }
+
+       const result = Map.groupBy(products,CallBack);
+       let text = "Suggested:";
+
+        for(let x of result.get("Suggested"))
+        {
+            text = text + x.name + " " + x.value + "\n";
+        }
+
+        text = text + "Not Suggested:"
+        for(let x of result.get("Not Suggested"))
+        {
+            text = text + x.name + " " + x.value + "\n";
+        }
+
+        document.getElementById("first").innerText = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightskyblue;
+}
+
+h1{
+    background-color: aquamarine;  
+    padding: 30px;
+    margin: 0;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    padding: 30px;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-family:cursive;
+    font-size: 30px;
+    padding: 50px;
+    background-color: rgb(100, 186, 189);
+    margin: 50px;
+}
+
+footer{
+    text-align: center;
+ font-family:cursive;
+ background-color: rgb(100, 186, 189);
+  font-size: 30px;
+ padding: 50px;
+ margin: 50px;
+}
+
+nav{
+    float: left;
+    padding: 20px;
+    width: 30%;
+    background-color: rgb(155, 163, 235);
+    height: 200px;
+}
+nav,ul{
+    padding: 0;
+
+}
+
+li{
+margin: 0;
+}
+
+@media (max-width:600px)
+{
+    nav,article{
+        width: 100%;
+        height: auto;
+    }
+}
+article{
+    float: left;
+}

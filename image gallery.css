@@ -1,0 +1,25 @@
+.first{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.first:hover{
+border: 2px solid black;
+}
+
+div.first img{
+    width: 100%;
+    float: left;
+}
+
+.description{
+    padding: 20px;
+    text-align: center;
+}
+
+
+img{
+    height: 220px;
+    width: 200px;
+}

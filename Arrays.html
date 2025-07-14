@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Methods</title>
+</head>
+<body>
+
+    <p id = "first"></p>
+     <p id = "second"></p>
+      <p id = "third"></p>
+       <p id = "fourth"></p>
+        <p id = "fifth"></p>
+        <p id = "sixth"></p>
+        <p id = "seventh"></p>
+        <p id = "eigth"></p>
+        <p id = "ninth"></p>
+        <p id = "tenth"></p>
+        <p id = "eleventh"></p>
+
+    <script>
+        const companies = ["Google","Samsung","Microsoft","Apple"];
+        companies_2 = ["Iqoo","Realme","Oneplus", "Motorola"];
+        const values = [[1,2],[3,4],[6,8],[12,14]];
+
+        companies_length = companies.length;
+        document.getElementById("first").innerText = "Array length = " + " " + companies_length;
+        companies_order = companies.sort();
+        document.getElementById("second").innerText = "Sorted Array :" + " " + "[" +companies_order + "]";
+        companies_reversed = companies.reverse();
+        document.getElementById("third").innerText = "Reversed Array :" + " " +"[" + companies_reversed + "]";
+        companies_combined = companies.concat(companies_2);
+        document.getElementById("fourth").innerText = "Combined Array :" + " " + "[" + companies_combined + "]";
+        companies_shifted = companies.shift();
+        document.getElementById("fifth").innerText = "Shifted Element:" + " " + companies_shifted;
+        companies_unshifted = companies.unshift("Samsung");
+        document.getElementById("sixth").innerText = "Unshifted element :" + " " + companies_unshifted;
+
+        splitted_values = values.flat();
+        document.getElementById("seventh").innerText = "Splitted 'values' array : " + " " + "[" +splitted_values + "]";
+        swapped_companies = companies.copyWithin(3,0);
+
+        document.getElementById("eigth").innerText = "Swapped 'companies' array :" + " " + "[" + swapped_companies + "]";
+        sliced_companies_2 = companies_2.slice(1);
+        document.getElementById("ninth").innerText = "Sliced 'companies' :" + " " + "[" + sliced_companies_2 + "]";
+
+        const numbers = [20,40,60,80];
+        value = numbers.find(find_greater_value);
+        function find_greater_value(value,index,array)
+        {
+            return value > 40;
+        }
+        document.getElementById("tenth").innerHTML = "Greatest upcoming value after 40 in the array :" + " " + value;
+
+        const numbers_2 = [45,20,-10,100,50];
+        sorted_numbers_2 = numbers_2.sort(function(a,b)
+        {
+            return a-b;
+        }
+    );
+        document.getElementById("eleventh").innerText = "Sorted in desc order :" + " " + sorted_numbers_2;
+
+    </script>
+</body>
+</html>

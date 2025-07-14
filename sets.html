@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets</title>
+</head>
+<body>
+    <p id = "first"></p>
+    <script>
+        const values = new Set([20,40,60,70]);
+        const products = new Set([20,40,60,70]);
+        const matching_values = values.isSubsetOf(products);
+    document.getElementById("first").innerText = matching_values;
+    </script>
+</body>
+</html>

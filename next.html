@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "first"></p>
+    <script>
+        function find_values()
+        {
+            let num = 0;
+            return {
+               next: function(){
+                num = num + 10;
+                return{
+                    value: num,
+                    done: false
+                };
+               } 
+            };
+        }
+const num = find_values();
+num.next();
+num.next();
+num.next();
+document.getElementById("first").innerText = num.next().value;
+
+</script>
+</body>
+</html>

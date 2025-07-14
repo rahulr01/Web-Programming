@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <p id = "first"></p>
+    <p id = "second"></p>
+    <p id = "third"></p>
+    <script>
+        let stud_details = {
+            Name : "Rahul R",
+            Course : "M.Sc CS",
+            MyCars : {
+                car1 : "Volvo",
+                car2 : "Mercedes",
+                car_details: function()
+                {
+                    return "Cars are: " + this.car1 + "and" + this.car2;                
+                }
+            }
+        };
+        stud_details.details = function() 
+        {
+            return ("Name and Course : " + this.Name + " " + this.Course).toUpperCase();
+        };
+
+       document.getElementById("second").innerHTML = stud_details.details();
+       document.getElementById("first").innerHTML = stud_details.MyCars.car_details();
+           </script>
+</body>
+</html>

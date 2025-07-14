@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    .calculator{
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+     .buttons :hover{
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+     }
+
+     .buttons{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        top: 30px;
+        margin: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+#result
+{
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(94, 189, 248);
+    text-align: center;
+}
+    </style>
+</head>
+ <center>
+    <body style="position: relative; top: 180px;">
+<div class = "calculator">
+    <input type = "text" id = "result" style="height: 85px; width: 275px; border-radius: 30px; border-width: 5px; border-color: rgb(139, 196, 243);">
+    <div class="buttons">
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; ; background-color: lightcyan;" onclick="clearDisplay()">C</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('()')">()</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('%')">% </button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('/')">/ </button><br>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('7')">7</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('8')">8</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('9')">9</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('x')">x</button><br>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('4')">4</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('5')">5</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('6')">6</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('-')">-</button><br>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('1')">1</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('2')">2</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('3')">3</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('+')">+</button><br>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightskyblue" onclick="append('0')">0</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick="append('.')">.</button>
+    <button type = "button" style = "padding: 30px; border-radius: 30px; border-width: 1px; background-color: lightcyan;" onclick = "calculate()">=</button>
+ </center>
+ </div>
+ </div>
+    <script>
+       function append(value)
+       {
+        document.getElementById("result").value += value;
+       }
+
+       function clearDisplay()
+       {
+        document.getElementById("result").value = " ";
+       }
+
+       function calculate() {
+      try 
+      {
+        document.getElementById("result").value = eval(document.getElementById("result").value);
+      } 
+      catch 
+      {
+        document.getElementById("result").value = "Error";
+      }
+    }
+
+    </script>
+</body>
+</html>
