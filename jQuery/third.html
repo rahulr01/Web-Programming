@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("ul li:first-child").hide();
+        });
+    });
+</script>
+
+<body>
+    <ul>
+        <li>Google</li>
+        <li>Samsung</li>
+        <li>Apple</li>
+    </ul>
+    <br><br>
+
+    <ul>
+        <li>Google Pixel 9 Pro</li>
+        <li>Samsung S25 Ultra</li>
+        <li>iPhone 16 Pro Max</li>
+    </ul>
+    <button type="button">Hide first list item of both UL</button>
+</body>
+
+</html>

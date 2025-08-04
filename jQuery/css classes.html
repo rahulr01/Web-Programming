@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".add").click(function(){
+                $(".first, .second").addClass("style");
+                $("div").addClass("content");
+            });
+
+           $(".remove").click(function(){
+            $(".first, .second").removeClass("style");
+           });
+
+           $(".toggle").click(function(){
+            $(".first, .second").toggleClass("style"); 
+           });
+
+           $(".italic").click(function(){
+            $("i").css({
+                "font-size": "150px",
+                "color": "blue"
+            });
+           });
+        });
+    </script>
+
+    <style>
+        .style{
+            color: darkgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 80px;
+        }
+
+        .content{
+            color: cadetblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h3 class="first">Some  content with some paragraph</h3>
+    <p class="second">Some content again with some paragraph</p>
+    <i>Italic Text</i>
+    <div>
+        Paragraph with some content that starts with blah blah blah
+    </div>
+    <button class="add">Add Style</button><br><br>
+    <button class="remove">Remove Style</button><br><br>
+    <button class="toggle">Toggle Style</button>
+    <button class="italic">Change font style</button>
+</body>
+</html>

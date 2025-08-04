@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p.first").dblclick(function () {
+                $("p.first").css("background-color", "green");
+            });
+
+
+            $("p.second").mouseenter(function () {
+                $("p.second").css("font-size", "100px");
+            });
+
+
+
+            $("p.third").mouseleave(function () {
+                $("p.third").css("color", "yellow");
+            });
+
+
+            $("p.fourth").mouseup(function () {
+                $("p.fourth").css("font-family", "fantasy");
+            });
+
+
+            $("p.fifth").mousedown(function () {
+                $("p.fifth").css("font-size", "30px");
+            });
+
+            $("p.sixth").hover(function () {
+                $("p.sixth").css("background-color", "blue");
+            });
+
+
+            $("input").focus(function () {
+                $("input").css("background-color", "yellow");
+            });
+
+            $("input").blur(function () {
+                $("input").css("background-color", "black");
+            });
+
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <p class="first">This is a simple paragraph that starts with the content like blah blah blah.....</p>
+    <p class="second">Double O tatted on her body WOAHH WOAHHH....</p>
+    <p class="third">She just wanna roll and I don't mind it aahhh ahhh...</p>
+    <p class="fourth">Ever since I was a kid, I've been legit....</p>
+    <p class="fifth">You should let her she wanna be it...</p>
+    <p class="sixth">Feel like skateboard P...BBC boys on the creep</p>
+    <p class="seventh">Feel like it's 03...Neptune drum with a beam..</p>
+    <label for="text">Name:</label>
+    <input type="text" id="text">
+</body>
+
+</html>

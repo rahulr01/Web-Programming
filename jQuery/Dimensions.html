@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .first{
+            height: 260px;
+            width: 180px;
+            background-color: lightblue;
+        }
+
+        .second{
+            height: 260px;
+            width: 180px;
+            padding: 20px;
+            margin: 5px;
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".default").click(function(){
+                var text = " ";
+                text+= "Height:" + $(".first").height();
+                text+= "Width:" + $(".first").width();
+                $(".first").html(text);
+            });
+
+            $(".inner").click(function(){
+                var text = " ";
+                text+= "Inner Height:" + $(".second").innerHeight();
+                text+="Inner Width:" + $(".second").innerWidth();
+                $(".second").html(text);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="first"></div><br><br>
+    <div class="second"></div><br><br>
+    <button class="default">Show height and width</button>
+    <button class="inner">Show inner height & width</button>
+</body>
+</html>
